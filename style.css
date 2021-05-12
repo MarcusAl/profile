@@ -38,6 +38,7 @@ a:hover {
 }
 
 .follow_link {
+  margin-top: 0;
   color: rgba(180, 200, 237, 1);
   font-size: 25px;
 }
@@ -132,8 +133,8 @@ p {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  width: 20vh;
-  height: 2.5vh;
+  width: 22vh;
+  height: 3vh;
   padding: 1rem;
   transition-duration: 2s;
   transition-timing-function: ease-out;
@@ -172,6 +173,9 @@ p {
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
+  }
+  .follow_link {
+    margin-top: 1rem;
   }
 }
 @media (max-width: 540px) {
