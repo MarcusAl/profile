@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Baskerville:ital@0;1&family=Lora&family=Raleway&display=swap');
+body {
+  background-color:rgba(241, 250, 238, 0.3);
+  font-size: 18px;
+  color: #4B7B9D;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 3px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #1D3557;
+  font-family: 'Roboto', sans-serif;
+}
+
+a,
+li {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(230, 57, 70);
+  font-weight: 600;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.link-list {
+  padding: 0;
+}
+
+a:hover {
+  color: #1D3557;
+}
+
+.follow_link {
+  color: rgba(180, 200, 237, 1);
+  font-size: 25px;
+}
+
+.dot-fx {
+  animation-name: driploop;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes driploop {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+p {
+  font-family: 'Lora', serif;
+  letter-spacing: 0.8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.spacing {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 55%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.card {
+  margin-top: 3rem;
+  padding: 4%;
+  background-color:rgba(241, 250, 238, 0.3);
+  box-shadow: rgba(29, 53, 87, 0.5) 0px 5px 30px 0px;
+}
+
+.card-small {
+  height: 10vh;
+}
+
+.card-image {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+}
+
+.background-white {
+  background: rgba(69, 123, 157, 0.4);
+  margin: 30px 40px 30px 40px;
+  border-radius: 1rem;
+}
+
+.card-image:hover {
+  transform: scale(1.5,1.5);
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.card-button {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(220, 237, 237, 1) 100%);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 20vh;
+  height: 2vh;
+  padding: 1rem;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+.card-button:hover {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(200, 237, 237, 1) 100%);
+}
+
+.card-subtitle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 50px;
+  margin: 10px 10px 30px 10px;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+
+.card > a {
+  color: #1D3557;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .card-button {
+    height: 4vh;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    height: 600px;
+  }
+
+  .card-button {
+    height: 3vh;
+  }
+  .card-small {
+    height: 15vh;
+  }
+}
