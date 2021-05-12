@@ -44,7 +44,7 @@ a:hover {
 
 .dot-fx {
   animation-name: driploop;
-  animation-duration: 1.5s;
+  animation-duration: 1.3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -115,8 +115,8 @@ p {
   height: 7rem;
 }
 
-.background-white {
-  background: rgba(69, 123, 157, 0.4);
+.background-colour {
+  background: rgba(69, 123, 157, 0.2);
   margin: 30px 40px 30px 40px;
   border-radius: 1rem;
 }
